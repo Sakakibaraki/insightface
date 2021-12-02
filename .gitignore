@@ -101,3 +101,8 @@ ENV/
 .mypy_cache/
 
 .DS_Store
+
+## 個人的な追加項目 ##
+
+# 画像
+python-package/output/*/

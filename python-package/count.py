@@ -23,9 +23,9 @@ for file in files:
     faces = app.get(img)
     image_count = image_count + 1
     face_count = face_count + len(faces)
-    if len(faces)>0:
+    if len(faces) > 0:
       rimg = app.draw_on(img, faces)
-      cv2.imwrite("./" + str(face_count) + ".jpg", rimg)
+      cv2.imwrite("./output/part1/" + str(face_count)+ "_" + file + ".jpg", rimg)
 
 print(image_count)
 print(face_count)
